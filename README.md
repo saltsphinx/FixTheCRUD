@@ -1,4 +1,4 @@
-# Fork this repo
+# Fork This Repo
 **After you fork this repo, you will need to clone the repo to your local machine and install node modules into the frontend folder and the FixTheCRUD folder.** 
 1. Open your command line in visual studio code.
 2. Navigate to the FixTheCRUD folder if you are not already in it.
