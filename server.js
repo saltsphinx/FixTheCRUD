@@ -57,6 +57,15 @@ app.put('/employees/:id', (req, res) => {
 });
 
 // Add delete functionality
+app.delete('/employees/:id', (req, res) => {
+    const { id } = req.params;
+    db.run("DELETE FROM employees WHERE id = ?",  id, function(err) {
+        if (err) {
+            return res.status(500).send(err);
+        }
+        res.json({ changes: this.changes });
+    });
+});
 
 app.listen(3001, () => {
     console.log('Server is running on port 3001');
